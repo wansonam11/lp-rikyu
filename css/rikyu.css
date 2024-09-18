@@ -269,7 +269,183 @@ a {
   background-color: #CCCCCC;
 }
 .main .main-content .introduction {
-  height: 760px;
+  margin-bottom: 4%;
+}
+.main .main-content .introduction__container {
+  padding-top: 4%;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.main .main-content .introduction__container h2 {
+  text-align: center;
+  font-family: "Noto Serif JP";
+  line-height: 1.5;
+  font-size: 32px;
+  font-weight: normal;
+}
+.main .main-content .introduction__container h2::after {
+  content: "";
+  background: #CCCCCC;
+  width: 174px;
+  height: 1px;
+  display: block;
+  margin: 47px 0 47px 0;
+  position: relative;
+  right: -50%;
+  transform: translate(-50%);
+}
+.main .main-content .introduction__container__box01 {
+  margin-bottom: 8%;
+  padding: 4%;
+  width: 100%;
+  background-color: #2D2D2D;
+}
+.main .main-content .introduction__container__box01__title {
+  display: flex;
+  align-items: center;
+}
+.main .main-content .introduction__container__box01__title span {
+  color: #fff;
+  font-family: "Noto Serif JP";
+  line-height: 1.5;
+  font-size: 32px;
+  margin: 0 48px 0 36px;
+}
+.main .main-content .introduction__container__box01__title span::after {
+  content: "";
+  background: #FFF;
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin-top: 20px;
+}
+.main .main-content .introduction__container__box01__title p {
+  font-family: "Noto Serif JP";
+  line-height: 2;
+  color: #fff;
+  font-size: 16px;
+}
+.main .main-content .introduction__container__box01__img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px double #fff;
+}
+.main .main-content .introduction__container__box01__img__image02__02 {
+  margin-top: 10px;
+}
+.main .main-content .introduction__container__box01__coupon {
+  padding-top: 4%;
+  text-align: center;
+}
+.main .main-content .introduction__container__box02 {
+  margin-bottom: 8%;
+  padding: 4%;
+  width: 100%;
+  background-color: #2D2D2D;
+}
+.main .main-content .introduction__container__box02__title {
+  display: flex;
+  align-items: center;
+}
+.main .main-content .introduction__container__box02__title span {
+  color: #fff;
+  font-family: "Noto Serif JP";
+  line-height: 1.5;
+  font-size: 32px;
+  margin: 0 48px 0 36px;
+}
+.main .main-content .introduction__container__box02__title span::after {
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin-top: 20px;
+}
+.main .main-content .introduction__container__box02__title p {
+  font-family: "Noto Serif JP";
+  line-height: 2;
+  color: #fff;
+  font-size: 16px;
+}
+.main .main-content .introduction__container__box02__img {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px double #fff;
+}
+.main .main-content .introduction__container__box02__img__image01 {
+  text-align: center;
+  position: relative;
+  right: -50%;
+  transform: translate(-50%);
+}
+.main .main-content .introduction__container__box02__coupon {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+.main .main-content .introduction__container__box03 {
+  margin-bottom: 8%;
+  padding: 4%;
+  width: 100%;
+  background-color: #2D2D2D;
+}
+.main .main-content .introduction__container__box03::after {
+  content: "Special Offers";
+  position: absolute;
+  top: 0;
+  right: -28%;
+  font-family: "Noto Serif JP";
+  font-optical-sizing: auto;
+  font-size: 150px;
+  writing-mode: vertical-rl;
+  color: #4d4d4d;
+}
+.main .main-content .introduction__container__box03__title {
+  display: flex;
+  align-items: center;
+}
+.main .main-content .introduction__container__box03__title span {
+  color: #fff;
+  font-family: "Noto Serif JP";
+  line-height: 1.5;
+  font-size: 32px;
+  margin: 0 48px 0 36px;
+}
+.main .main-content .introduction__container__box03__title span::after {
+  content: "";
+  background: #FFF;
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin-top: 20px;
+}
+.main .main-content .introduction__container__box03__title p {
+  font-family: "Noto Serif JP";
+  line-height: 2;
+  color: #fff;
+  font-size: 16px;
+}
+.main .main-content .introduction__container__box03__img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px double #fff;
+}
+.main .main-content .introduction__container__box03__img__image02__02 {
+  margin-top: 10px;
+}
+.main .main-content .introduction__container__box03__coupon {
+  padding-top: 4%;
+}
+.main .main-content .introduction__container__box03__coupon__img02 {
+  margin-left: 13%;
+  width: 34%;
+  padding-bottom: 1%;
 }
 .main .main-content .cta-02 {
   background-color: #CCCCCC;
@@ -277,9 +453,38 @@ a {
 }
 .main .main-content .rule {
   height: 760px;
+  margin-bottom: 10%;
+}
+.main .main-content .rule__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.main .main-content .rule__container__box {
+  margin-top: 8%;
+}
+.main .main-content .rule__container__box__title {
+  background-color: #2D2D2D;
+}
+.main .main-content .rule__container__box__title h2 {
+  padding: 5% 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Serif JP";
+  line-height: 1.5;
+  font-size: 32px;
+  font-weight: normal;
+}
+.main .main-content .rule__container__box__content {
+  border: 4px double #9c9999;
+  padding: 5%;
+  font-family: "Noto Serif JP";
+  line-height: 3;
+  color: #2D2D2D;
+  font-size: 18px;
 }
 
 .footer {
+  display: none;
   background-color: pink;
   height: 300px;
 }

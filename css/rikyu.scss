@@ -319,7 +319,6 @@ a {
               line-height: 2;
             }
           }
-
         }
 
         &__img {
@@ -333,7 +332,6 @@ a {
             top: 15%;
           }
         }
-
       }
     }
 
@@ -342,8 +340,238 @@ a {
       background-color: #CCCCCC;
     }
 
+    //introuduction
     .introduction {
-      height: 760px;
+      margin-bottom: 4%;
+
+      &__container {
+        padding-top: 4%;
+        width: 1100px;
+        margin: 0 auto;
+        position: relative;
+
+        h2 {
+          text-align: center;
+          font-family: "Noto Serif JP";
+          line-height: 1.5;
+          font-size: 32px;
+          font-weight: normal;
+
+          &::after {
+            content: '';
+            background: #CCCCCC;
+            width: 174px;
+            height: 1px;
+            display: block;
+            margin: 47px 0 47px 0;
+            position: relative;
+            right: -50%;
+            transform: translate(-50%);
+          }
+        }
+
+        //box1
+        &__box01 {
+          margin-bottom: 8%;
+          padding: 4%;
+          width: 100%;
+          background-color: #2D2D2D;
+
+
+          &__title {
+            display: flex;
+
+            align-items: center;
+
+            span {
+              color: #fff;
+              font-family: "Noto Serif JP";
+              line-height: 1.5;
+              font-size: 32px;
+              margin: 0 48px 0 36px;
+
+              &::after {
+                content: '';
+                background: #FFF;
+                width: 100%;
+                height: 1px;
+                display: block;
+                margin-top: 20px;
+
+              }
+            }
+
+            p {
+              font-family: "Noto Serif JP";
+              line-height: 2;
+              color: #fff;
+              font-size: 16px;
+            }
+          }
+
+          &__img {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 4px double #fff;
+
+            &__image01 {}
+
+            &__image02 {
+
+
+              &__02 {
+                margin-top: 10px;
+              }
+            }
+          }
+
+          &__coupon {
+            padding-top: 4%;
+            text-align: center;
+          }
+        }
+
+        //box2
+        &__box02 {
+          margin-bottom: 8%;
+          padding: 4%;
+          width: 100%;
+          background-color: #2D2D2D;
+
+          &__title {
+            display: flex;
+            align-items: center;
+
+            span {
+              color: #fff;
+              font-family: "Noto Serif JP";
+              line-height: 1.5;
+              font-size: 32px;
+              margin: 0 48px 0 36px;
+
+              &::after {
+                content: '';
+                background: #fff;
+                width: 100%;
+                height: 1px;
+                display: block;
+                margin-top: 20px;
+              }
+            }
+
+            p {
+              font-family: "Noto Serif JP";
+              line-height: 2;
+              color: #fff;
+              font-size: 16px;
+            }
+          }
+
+          &__img {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 4px double #fff;
+
+
+            &__image01 {
+              text-align: center;
+              position: relative;
+              right: -50%;
+              transform: translate(-50%);
+            }
+          }
+
+          &__coupon {
+            padding-top: 4%;
+            display: flex;
+            justify-content: center;
+
+          }
+        }
+
+        //box3
+        &__box03 {
+          margin-bottom: 8%;
+          padding: 4%;
+          width: 100%;
+          background-color: #2D2D2D;
+
+          &::after {
+            content: 'Special Offers'; 
+            position: absolute;
+            top: 0;
+            right: -28%;
+            font-family: "Noto Serif JP";
+            font-optical-sizing: auto;
+            font-size: 150px;
+            writing-mode: vertical-rl;
+            color: #4d4d4d;
+          }
+
+
+          &__title {
+            display: flex;
+
+            align-items: center;
+
+            span {
+              color: #fff;
+              font-family: "Noto Serif JP";
+              line-height: 1.5;
+              font-size: 32px;
+              margin: 0 48px 0 36px;
+
+              &::after {
+                content: '';
+                background: #FFF;
+                width: 100%;
+                height: 1px;
+                display: block;
+                margin-top: 20px;
+              }
+            }
+
+            p {
+              font-family: "Noto Serif JP";
+              line-height: 2;
+              color: #fff;
+              font-size: 16px;
+            }
+          }
+
+          &__img {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 4px double #fff;
+
+            &__image01 {}
+
+            &__image02 {
+
+
+              &__02 {
+                margin-top: 10px;
+              }
+            }
+          }
+
+          &__coupon {
+            padding-top: 4%;
+
+            &__img02 {
+              margin-left: 13%;
+              width: 34%;
+              padding-bottom: 1%;
+            }
+
+          }
+        
+        }
+      }
     }
 
     .cta-02 {
@@ -353,14 +581,46 @@ a {
 
     .rule {
       height: 760px;
+      margin-bottom: 10%;
+
+      &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        &__box {
+          margin-top: 8%;
+
+          &__title {
+            background-color: #2D2D2D;
+
+            h2 {
+              padding: 5% 0;
+              color: #fff;
+              text-align: center;
+              font-family: "Noto Serif JP";
+              line-height: 1.5;
+              font-size: 32px;
+              font-weight: normal;
+            }
+
+          }
+          &__content {
+            border: 4px double #9c9999;;
+            padding: 5%;
+            font-family: "Noto Serif JP";
+            line-height: 3;
+            color: #2D2D2D;
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
 }
 
-
-
 //footer
 .footer {
+  display: none;
   background-color: pink;
   height: 300px;
 }
