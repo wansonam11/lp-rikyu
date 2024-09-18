@@ -237,6 +237,8 @@ a {
       }
     }
 
+
+
     //merit
     .merit {
 
@@ -335,9 +337,15 @@ a {
       }
     }
 
+
+    //coupon1
     .cta-01 {
+      background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/cta__bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
       height: 495px;
-      background-color: #CCCCCC;
+      position: relative;
+      overflow: hidden;
     }
 
     //introuduction
@@ -574,9 +582,15 @@ a {
       }
     }
 
+    
+    //coupon1
     .cta-02 {
-      background-color: #CCCCCC;
+      background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/cta__bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
       height: 495px;
+      position: relative;
+      overflow: hidden;
     }
 
     .rule {

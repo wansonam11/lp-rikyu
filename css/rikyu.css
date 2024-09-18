@@ -265,8 +265,12 @@ a {
   top: 15%;
 }
 .main .main-content .cta-01 {
+  background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/cta__bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 495px;
-  background-color: #CCCCCC;
+  position: relative;
+  overflow: hidden;
 }
 .main .main-content .introduction {
   margin-bottom: 4%;
@@ -448,8 +452,12 @@ a {
   padding-bottom: 1%;
 }
 .main .main-content .cta-02 {
-  background-color: #CCCCCC;
+  background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/cta__bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 495px;
+  position: relative;
+  overflow: hidden;
 }
 .main .main-content .rule {
   height: 760px;
