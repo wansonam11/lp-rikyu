@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+//header
+.header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  padding: 30px 44px 0 28px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+
+    &__logo {
+      width: 127px;
+
+      &__link {
+
+        &__img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__menu {
+      width: 42px;
+      height: 14px;
+      position: relative;
+      cursor: pointer;
+
+      span:nth-of-type(1) {
+        position: absolute;
+        height: 3px;
+        background: #fff;
+        width: 100%;
+      }
+
+      span:nth-of-type(2) {
+        position: absolute;
+        height: 3px;
+        background: #fff;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+//main
+.main {
+
+  //main-visual
+  .main-visual {
+    height: 770px;
+    background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/fv__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__text {
+      margin: 0 auto;
+      max-width: 1100px;
+      top: 40%;
+      position: relative;
+      color: #fff;
+      font-family: "Noto Serif JP";
+      font-weight: 400;
+      font-style: normal;
+      text-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+      letter-spacing: 0.1em;
+
+      &__en {
+        font-size: 76px;
+      }
+
+      &__jp {
+        font-size: 32px;
+      }
+
+    }
+
+    &__coupon {
+      display: inline-block;
+      position: absolute;
+      right: 10%;
+      top: 55%;
+    }
+  }
+
+  .main-content {
+
+    //guest
+    .guest {
+      margin: 0 auto;
+      max-width: 1100px;
+      padding-top: 110px;
+      padding-bottom: 110px;
+
+      &__contain {
+        display: flex;
+
+        &__text {
+
+          h2 {
+            font-family: "Noto Serif JP";
+            line-height: 1.5;
+            font-weight: normal;
+            font-size: 32px;
+
+            &::after {
+              content: '';
+              background: #CCCCCC;
+              width: 180px;
+              height: 1px;
+              display: block;
+              margin: 30px 0 70px 0;
+            }
+          }
+
+          p {
+            font-family: "Noto Serif JP";
+            line-height: 1.5;
+            font-weight: 400;
+            font-size: 16px;
+          }
+        }
+
+        &__img {
+          &__graph {}
+        }
+      }
+
+    }
+
+    //example
+    .example {
+      height: 760px;
+      background-color: #F7F7F7;
+
+      &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5% 0;
+        position: relative;
+
+        &::before {
+          content: 'Example';
+          height: 1px;
+          display: block;
+          writing-mode: vertical-rl;
+          position: absolute;
+          font-family: "Noto Serif JP";
+          line-height: 1.5;
+          font-weight: normal;
+          font-size: 150px;
+          right: 100%;
+          top: 0%;
+          color: #4d4d4d;
+        }
+
+        h2 {
+          text-align: center;
+          font-family: "Noto Serif JP";
+          line-height: 1.5;
+          font-weight: normal;
+          font-size: 32px;
+          margin-bottom: 75px;
+
+        }
+
+        &__list {
+          display: flex;
+          justify-content: center;
+          gap: 5%;
+          padding-top: 9%;
+
+
+          &__box {
+            border: 2px solid #000;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            position: relative;
+
+            &:nth-of-type(3) {
+              .example__container__list__box__img {
+                bottom: 50%;
+              }
+
+            }
+
+            &__img {
+              position: absolute;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              justify-items: center;
+              align-content: center;
+              bottom: 40%;
+            }
+
+            &__txt {
+              text-align: center;
+              width: 220px;
+              font-family: "Noto Sans JP";
+              line-height: 1.5;
+              font-weight: bold;
+              position: absolute;
+              top: 64%;
+              left: 4%;
+              font-size: 19px;
+            }
+          }
+        }
+      }
+    }
+
+    //merit
+    .merit {
+
+      height: 760px;
+      max-width: 1100px;
+      margin: 0 auto;
+      margin-bottom: 4%;
+
+      &__contain {
+        margin-top: 15%;
+        display: flex;
+        width: 100%;
+
+        &__text {
+          font-family: "Noto Serif JP";
+          line-height: 1.5;
+
+          h2 {
+            font-size: 32px;
+            font-weight: normal;
+
+            &::after {
+              content: '';
+              background: #CCCCCC;
+              width: 180px;
+              height: 1px;
+              display: block;
+              margin: 30px 0 70px 0;
+            }
+          }
+
+          &__box01 {
+            margin-bottom: 70px;
+
+            h3 {
+              font-size: 32px;
+              font-weight: normal;
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              padding-bottom: 3%;
+
+              &::before {
+                content: '';
+                width: 28px;
+                height: 28px;
+                background: #E5D07A;
+                border-radius: 50%;
+                display: block;
+              }
+            }
+
+            ul {
+              font-size: 16px;
+              line-height: 2;
+            }
+          }
+
+          &__box02 {
+            h3 {
+              font-size: 32px;
+              font-weight: normal;
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              padding-bottom: 3%;
+
+              &::before {
+                content: '';
+                width: 28px;
+                height: 28px;
+                background: #d05a1f;
+                border-radius: 50%;
+                display: block;
+              }
+            }
+
+            ul {
+              font-size: 16px;
+              line-height: 2;
+            }
+          }
+
+        }
+
+        &__img {
+
+          position: relative;
+          width: 40%;
+
+          &__graph {
+            position: absolute;
+            right: -3%;
+            top: 15%;
+          }
+        }
+
+      }
+    }
+
+    .cta-01 {
+      height: 495px;
+      background-color: #CCCCCC;
+    }
+
+    .introduction {
+      height: 760px;
+    }
+
+    .cta-02 {
+      background-color: #CCCCCC;
+      height: 495px;
+    }
+
+    .rule {
+      height: 760px;
+    }
+  }
+}
+
+
+
+//footer
+.footer {
+  background-color: pink;
+  height: 300px;
+}
