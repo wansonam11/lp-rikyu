@@ -56,6 +56,9 @@ a {
   margin-top: 10px;
 }
 
+.main {
+  overflow: hidden;
+}
 .main .main-visual {
   height: 770px;
   background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/fv__bg.jpg);
@@ -112,9 +115,12 @@ a {
 }
 .main .main-content .guest__contain__text p {
   font-family: "Noto Serif JP";
-  line-height: 1.5;
+  line-height: 2;
   font-weight: 400;
   font-size: 16px;
+}
+.main .main-content .guest__contain__img {
+  width: 66%;
 }
 .main .main-content .example {
   height: 760px;
@@ -155,6 +161,7 @@ a {
   padding-top: 9%;
 }
 .main .main-content .example__container__list__box {
+  background-color: #fff;
   border: 2px solid #000;
   width: 240px;
   height: 240px;
@@ -162,17 +169,16 @@ a {
   position: relative;
 }
 .main .main-content .example__container__list__box:nth-of-type(3) .example__container__list__box__img {
-  bottom: 50%;
+  bottom: 64%;
 }
 .main .main-content .example__container__list__box__img {
   position: absolute;
-  width: 100%;
+  width: 180px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  bottom: 40%;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-50%);
 }
 .main .main-content .example__container__list__box__txt {
   text-align: center;
@@ -181,7 +187,7 @@ a {
   line-height: 1.5;
   font-weight: bold;
   position: absolute;
-  top: 64%;
+  top: 52%;
   left: 4%;
   font-size: 19px;
 }
@@ -234,6 +240,8 @@ a {
 .main .main-content .merit__contain__text__box01 ul {
   font-size: 16px;
   line-height: 2;
+  text-indent: -10px;
+  padding-left: 10px;
 }
 .main .main-content .merit__contain__text__box02 h3 {
   font-size: 32px;
@@ -254,6 +262,8 @@ a {
 .main .main-content .merit__contain__text__box02 ul {
   font-size: 16px;
   line-height: 2;
+  text-indent: -10px;
+  padding-left: 10px;
 }
 .main .main-content .merit__contain__img {
   position: relative;
@@ -262,7 +272,7 @@ a {
 .main .main-content .merit__contain__img__graph {
   position: absolute;
   right: -3%;
-  top: 15%;
+  top: 12%;
 }
 .main .main-content .cta-01 {
   background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/cta__bg.jpg);
@@ -271,6 +281,97 @@ a {
   height: 495px;
   position: relative;
   overflow: hidden;
+}
+.main .main-content .cta-01__container {
+  display: flex;
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+.main .main-content .cta-01__container__circle {
+  width: 100%;
+}
+.main .main-content .cta-01__container__circle::after {
+  content: "";
+  background: rgba(77, 77, 77, 0.7);
+  height: 950px;
+  width: 950px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.main .main-content .cta-01__container__circle > h2 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Serif JP";
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 32px;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+.main .main-content .cta-01__container__circle__img {
+  position: relative;
+  z-index: 1;
+}
+.main .main-content .cta-01__container__circle__img::before {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 590px;
+  height: 1px;
+  margin-top: 20px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.main .main-content .cta-01__container__circle__img__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-content .cta-01__container__circle__txt {
+  position: relative;
+  z-index: 1;
+}
+.main .main-content .cta-01__container__circle__txt > p {
+  padding-top: 3%;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Noto Serif JP";
+}
+.main .main-content .cta-01__container__circle__button {
+  position: relative;
+  z-index: 1;
+  margin-top: 3%;
+  width: 540px;
+  border-radius: 60px;
+  background-color: #234298;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.main .main-content .cta-01__container__circle__button span {
+  font-family: "Noto Serif JP";
+  color: #fff;
+  font-size: 32px;
 }
 .main .main-content .introduction {
   margin-bottom: 4%;
@@ -489,6 +590,90 @@ a {
   line-height: 3;
   color: #2D2D2D;
   font-size: 18px;
+}
+
+.contact__bg01 {
+  height: 660px;
+  background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/f_bg01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-size: cover;
+}
+.contact__bg01__container {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Noto Serif JP";
+  color: #fff;
+}
+.contact__bg01__container__txt {
+  padding-top: 10%;
+  text-align: center;
+}
+.contact__bg01__container__txt h2 {
+  font-size: 70px;
+  font-weight: normal;
+  font-family: "Noto Serif JP";
+}
+.contact__bg01__container__txt span {
+  margin-top: 3%;
+}
+.contact__bg01__container__txt p {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Noto Serif JP";
+  margin-top: 3%;
+}
+.contact__bg01__container__box {
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 330px;
+  position: relative;
+  transform: translateY(100px);
+}
+.contact__bg01__container__box__item {
+  width: 32%;
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__bg01__container__box__item:nth-of-type(3) span::after {
+  position: relative;
+  bottom: -17px;
+}
+.contact__bg01__container__box__item p {
+  color: #fff;
+  font-size: 24px;
+}
+.contact__bg01__container__box__item p::before {
+  content: "";
+  background: url(../img/f_icon01.svg) no-repeat center bottom/100% auto;
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 44px;
+  margin: 16px auto 27px;
+}
+.contact__bg01__container__box__item span {
+  color: #fff;
+  font-size: 14px;
+}
+.contact__bg01__container__box__item span::after {
+  content: "";
+  display: block;
+  position: relative;
+  background: url(../img/idx_dot.svg) no-repeat center bottom/100% auto;
+  width: 36px;
+  height: 46px;
+  margin: 16px auto 14px;
+}
+.contact__bg02 {
+  height: 770px;
+  background-color: #F7F7F7;
 }
 
 .footer {

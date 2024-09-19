@@ -69,8 +69,9 @@ a {
 
 //main
 .main {
-
+  overflow: hidden;
   //main-visual
+
   .main-visual {
     height: 770px;
     background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/fv__bg.jpg);
@@ -140,13 +141,15 @@ a {
 
           p {
             font-family: "Noto Serif JP";
-            line-height: 1.5;
+            line-height: 2;
             font-weight: 400;
             font-size: 16px;
           }
         }
 
         &__img {
+          width: 66%;
+
           &__graph {}
         }
       }
@@ -186,7 +189,6 @@ a {
           font-weight: normal;
           font-size: 32px;
           margin-bottom: 75px;
-
         }
 
         &__list {
@@ -195,8 +197,8 @@ a {
           gap: 5%;
           padding-top: 9%;
 
-
           &__box {
+            background-color: #fff;
             border: 2px solid #000;
             width: 240px;
             height: 240px;
@@ -205,20 +207,18 @@ a {
 
             &:nth-of-type(3) {
               .example__container__list__box__img {
-                bottom: 50%;
+                bottom: 64%;
               }
-
             }
 
             &__img {
               position: absolute;
-              width: 100%;
+              width: 180px;
               display: flex;
               align-items: center;
-              justify-content: center;
-              justify-items: center;
-              align-content: center;
-              bottom: 40%;
+              bottom: 55%;
+              left: 50%;
+              transform: translate(-50%);
             }
 
             &__txt {
@@ -228,7 +228,7 @@ a {
               line-height: 1.5;
               font-weight: bold;
               position: absolute;
-              top: 64%;
+              top: 52%;
               left: 4%;
               font-size: 19px;
             }
@@ -236,7 +236,6 @@ a {
         }
       }
     }
-
 
 
     //merit
@@ -294,6 +293,8 @@ a {
             ul {
               font-size: 16px;
               line-height: 2;
+              text-indent: -10px;
+              padding-left: 10px;
             }
           }
 
@@ -319,24 +320,24 @@ a {
             ul {
               font-size: 16px;
               line-height: 2;
+              text-indent: -10px;
+              padding-left: 10px;
             }
           }
         }
 
         &__img {
-
           position: relative;
           width: 40%;
 
           &__graph {
             position: absolute;
             right: -3%;
-            top: 15%;
+            top: 12%;
           }
         }
       }
     }
-
 
     //coupon1
     .cta-01 {
@@ -346,6 +347,110 @@ a {
       height: 495px;
       position: relative;
       overflow: hidden;
+
+      &__container {
+        display: flex;
+        width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+
+        &__circle {
+          width: 100%;
+
+          &::after {
+            content: '';
+            background: rgba(77, 77, 77, 0.7);
+            height: 950px;
+            width: 950px;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+          }
+
+          >h2 {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            font-family: "Noto Serif JP";
+            line-height: 1.5;
+            font-weight: normal;
+            font-size: 32px;
+            z-index: 1;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3%;
+          }
+
+
+
+          &__img {
+            position: relative;
+            z-index: 1;
+
+            &::before {
+              content: '';
+              display: block;
+              background: #fff;
+              width: 590px;
+              height: 1px;
+              margin-top: 20px;
+              position: absolute;
+              right: 50%;
+              transform: translateX(50%);
+            }
+
+            &__image {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+          &__txt {
+            position: relative;
+            z-index: 1;
+
+            >p {
+              padding-top: 3%;
+              color: #fff;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              font-family: "Noto Serif JP";
+            }
+          }
+
+          &__button {
+            position: relative;
+            z-index: 1;
+            margin-top: 3%;
+            width: 540px;
+            border-radius: 60px;
+            background-color: #234298;
+            display: flex;
+            justify-content: center;
+            padding: 2%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+
+            span {
+              font-family: "Noto Serif JP";
+              color: #fff;
+              font-size: 32px;
+            }
+          }
+        }
+      }
     }
 
     //introuduction
@@ -508,7 +613,7 @@ a {
           background-color: #2D2D2D;
 
           &::after {
-            content: 'Special Offers'; 
+            content: 'Special Offers';
             position: absolute;
             top: 0;
             right: -28%;
@@ -518,7 +623,6 @@ a {
             writing-mode: vertical-rl;
             color: #4d4d4d;
           }
-
 
           &__title {
             display: flex;
@@ -575,14 +679,11 @@ a {
               width: 34%;
               padding-bottom: 1%;
             }
-
           }
-        
         }
       }
     }
 
-    
     //coupon1
     .cta-02 {
       background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/cta__bg.jpg);
@@ -618,8 +719,10 @@ a {
             }
 
           }
+
           &__content {
-            border: 4px double #9c9999;;
+            border: 4px double #9c9999;
+            ;
             padding: 5%;
             font-family: "Noto Serif JP";
             line-height: 3;
@@ -629,6 +732,117 @@ a {
         }
       }
     }
+  }
+}
+
+//contact
+.contact {
+  &__bg01 {
+    height: 660px;
+    background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/f_bg01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-size: cover;
+
+    &__container {
+      max-width: 1100px;
+      height: 100%;
+      margin: 0 auto;
+      font-family: "Noto Serif JP";
+      color: #fff;
+
+      &__txt {
+        padding-top: 10%;
+        text-align: center;
+
+
+        h2 {
+          font-size: 70px;
+          font-weight: normal;
+          font-family: "Noto Serif JP";
+        }
+
+        span {
+          margin-top: 3%;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: normal;
+          font-family: "Noto Serif JP";
+          margin-top: 3%;
+        }
+      }
+
+      &__box {
+        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 330px;
+        position: relative;
+        transform: translateY(100px);
+
+        &__item {
+          width: 32%;
+          background-color: #2d2d2d;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:nth-of-type(3) {
+
+            span {
+              &::after {
+                position: relative;
+                bottom: -17px;
+              }
+            }
+          }
+
+          p {
+            color: #fff;
+            font-size: 24px;
+
+            &::before {
+              content: "";
+              background: url(../img/f_icon01.svg) no-repeat center bottom / 100% auto;
+              position: relative;
+              display: block;
+              width: 46px;
+              height: 44px;
+              margin: 16px auto 27px;
+            }
+          }
+
+          span {
+            color: #fff;
+            font-size: 14px;
+
+
+            &::after {
+              content: "";
+              display: block;
+              position: relative;
+              background: url(../img/idx_dot.svg) no-repeat center bottom / 100% auto;
+              width: 36px;
+              height: 46px;
+              margin: 16px auto 14px;
+
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  &__bg02 {
+    height: 770px;
+    background-color: #F7F7F7;
+
   }
 }
 
