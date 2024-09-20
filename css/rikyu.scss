@@ -79,6 +79,10 @@ a {
     background-size: cover;
     position: relative;
 
+    @media screen and (max-width: 640px) {
+      height: 350px;
+    }
+
     &__text {
       margin: 0 auto;
       max-width: 1100px;
@@ -91,12 +95,42 @@ a {
       text-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
       letter-spacing: 0.1em;
 
+      @media screen and (max-width: 1024px) {
+        padding: 0 2%;
+      }
+
+      @media screen and (max-width: 768px) {
+        line-height: 1.2;
+        font-size: 26px;
+      }
+
+      @media screen and (max-width: 640px) {
+        font-size: 43px;
+      }
+
       &__en {
-        font-size: 76px;
+        font-size: 90px;
+        line-height: 1;
+
+        @media screen and (max-width: 768px) {
+          font-size: 72px;
+        }
+
+        @media screen and (max-width: 640px) {
+          font-size: 38px;
+        }
       }
 
       &__jp {
         font-size: 32px;
+
+        @media screen and (max-width: 768px) {
+          padding-top: 2%;
+        }
+
+        @media screen and (max-width: 640px) {
+          font-size: 18px;
+        }
       }
 
     }
@@ -106,6 +140,10 @@ a {
       position: absolute;
       right: 10%;
       top: 55%;
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
     }
   }
 
@@ -118,10 +156,38 @@ a {
       padding-top: 110px;
       padding-bottom: 110px;
 
+      @media screen and (max-width: 1024px) {
+        padding-top: 5%;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding-bottom: 5%;
+      }
+
+      @media screen and (max-width: 640px) {
+        padding: 4%;
+      }
+
       &__contain {
         display: flex;
 
+        @media screen and (max-width: 1024px) {
+          padding: 0 2%;
+        }
+
+        @media screen and (max-width: 640px) {
+          flex-direction: column;
+          ;
+        }
+
         &__text {
+          @media screen and (max-width: 1024px) {
+            width: 50%
+          }
+
+          @media screen and (max-width: 640px) {
+            width: 100%;
+          }
 
           h2 {
             font-family: "Noto Serif JP";
@@ -129,13 +195,26 @@ a {
             font-weight: normal;
             font-size: 32px;
 
+            @media screen and (max-width: 1024px) {
+              font-size: 24px;
+            }
+
+            @media screen and (max-width: 640px) {
+              font-size: 20px;
+            }
+
             &::after {
               content: '';
               background: #CCCCCC;
               width: 180px;
               height: 1px;
               display: block;
-              margin: 30px 0 70px 0;
+              margin: 7% 0 7% 0;
+
+              @media screen and (max-width: 1024px) {
+                font-size: 24px;
+                margin: 5% 0 5% 0;
+              }
             }
           }
 
@@ -144,13 +223,32 @@ a {
             line-height: 2;
             font-weight: 400;
             font-size: 16px;
+
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+
+            }
           }
         }
 
         &__img {
           width: 66%;
 
-          &__graph {}
+          @media screen and (max-width: 1024px) {
+            max-width: 100%;
+          }
+
+          @media screen and (max-width: 640px) {
+            width: 95%;
+            padding-top: 3%;
+          }
+
+          &__graph {
+
+            @media screen and (max-width: 1024px) {
+              width: 100%;
+            }
+          }
         }
       }
 
@@ -158,7 +256,7 @@ a {
 
     //example
     .example {
-      height: 760px;
+      //height: 760px;
       background-color: #F7F7F7;
 
       &__container {
@@ -189,6 +287,18 @@ a {
           font-weight: normal;
           font-size: 32px;
           margin-bottom: 75px;
+
+          @media screen and (max-width: 1024px) {
+            margin-bottom: 2%;
+          }
+
+          @media screen and (max-width: 768px) {
+            font-size: 24px;
+          }
+
+          @media screen and (max-width: 425px) {
+            font-size: 20px;
+          }
         }
 
         &__list {
@@ -196,6 +306,13 @@ a {
           justify-content: center;
           gap: 5%;
           padding-top: 9%;
+          flex-wrap: wrap;
+
+          @media screen and (max-width: 1024px) {
+            gap: 6%;
+            width: 50%;
+            margin: 0 auto;
+          }
 
           &__box {
             background-color: #fff;
@@ -205,9 +322,33 @@ a {
             border-radius: 50%;
             position: relative;
 
+            @media screen and (max-width: 1024px) {
+              width: 21vw;
+              height: 25vh;
+            }
+
+            @media screen and (max-width: 768px) {
+              height: 19vh;
+            }
+
+            @media screen and (max-width: 640px) {
+              height: 34vh;
+              width: 46vw;
+            }
+
+            @media screen and (max-width: 425px) {
+              height: 23vh;
+              width: 47vw;
+              margin-bottom: 15%;
+            }
+
             &:nth-of-type(3) {
               .example__container__list__box__img {
                 bottom: 64%;
+
+                @media screen and (max-width: 1024px) {
+                  bottom: 48%;
+                }
               }
             }
 
@@ -219,6 +360,17 @@ a {
               bottom: 55%;
               left: 50%;
               transform: translate(-50%);
+
+              @media screen and (max-width: 1024px) {
+                width: 18vw;
+                height: 18vw;
+              }
+
+              @media screen and (max-width: 640px) {
+                width: 23vw;
+                height: auto;
+              }
+
             }
 
             &__txt {
@@ -231,6 +383,25 @@ a {
               top: 52%;
               left: 4%;
               font-size: 19px;
+
+              @media screen and (max-width: 1024px) {
+                left: 0;
+              }
+
+              @media screen and (max-width: 768px) {
+                left: -17%;
+                font-size: 14px;
+              }
+
+              @media screen and (max-width: 640px) {
+                left: 12%;
+                font-size: 18px;
+              }
+
+              @media screen and (max-width: 425px) {
+                left: -4%;
+                font-size: 16px;
+              }
             }
           }
         }
@@ -240,16 +411,34 @@ a {
 
     //merit
     .merit {
-
       height: 760px;
       max-width: 1100px;
       margin: 0 auto;
       margin-bottom: 4%;
 
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: 640px) {
+        height: 1000px;
+      }
+
       &__contain {
         margin-top: 15%;
         display: flex;
         width: 100%;
+
+        @media screen and (max-width: 1024px) {
+          padding: 2%;
+        }
+
+        @media screen and (max-width: 640px) {
+          padding: 4%;
+          flex-direction: column;
+          ;
+          margin-top: 7%;
+        }
 
         &__text {
           font-family: "Noto Serif JP";
@@ -259,6 +448,20 @@ a {
             font-size: 32px;
             font-weight: normal;
 
+            @media screen and (max-width: 768px) {
+              font-size: 24px;
+            }
+
+            @media screen and (max-width: 640px) {
+              font-size: 20px;
+
+              br {
+                display: none;
+              }
+
+            }
+
+
             &::after {
               content: '';
               background: #CCCCCC;
@@ -266,11 +469,20 @@ a {
               height: 1px;
               display: block;
               margin: 30px 0 70px 0;
+
+              @media screen and (max-width: 640px) {
+                margin: 3% 0 6% 0;
+
+              }
             }
           }
 
           &__box01 {
             margin-bottom: 70px;
+
+            @media screen and (max-width: 640px) {
+              margin-bottom: 8%;
+            }
 
             h3 {
               font-size: 32px;
@@ -279,6 +491,11 @@ a {
               gap: 8px;
               align-items: center;
               padding-bottom: 3%;
+
+              @media screen and (max-width: 640px) {
+                font-size: 20px;
+              }
+
 
               &::before {
                 content: '';
@@ -295,6 +512,16 @@ a {
               line-height: 2;
               text-indent: -10px;
               padding-left: 10px;
+
+              @media screen and (max-width: 640px) {
+                li {
+                  font-size: 14px;
+                }
+
+                br {
+                  display: none;
+                }
+              }
             }
           }
 
@@ -306,6 +533,11 @@ a {
               gap: 8px;
               align-items: center;
               padding-bottom: 3%;
+
+              @media screen and (max-width: 640px) {
+                font-size: 20px;
+              }
+
 
               &::before {
                 content: '';
@@ -322,6 +554,16 @@ a {
               line-height: 2;
               text-indent: -10px;
               padding-left: 10px;
+
+              @media screen and (max-width: 640px) {
+                li {
+                  font-size: 14px;
+                }
+
+                br {
+                  display: none;
+                }
+              }
             }
           }
         }
@@ -330,10 +572,27 @@ a {
           position: relative;
           width: 40%;
 
+          @media screen and (max-width: 640px) {
+            width: 91%;
+          }
+
           &__graph {
             position: absolute;
             right: -3%;
             top: 12%;
+
+            @media screen and (max-width: 1024px) {
+              width: 142%;
+              right: -3%;
+            }
+
+            @media screen and (max-width: 768px) {
+              width: 127%;
+            }
+
+            @media screen and (max-width: 640px) {
+              width: 100%;
+            }
           }
         }
       }
@@ -353,6 +612,10 @@ a {
         width: 1100px;
         height: 100%;
         margin: 0 auto;
+
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
 
         &__circle {
           width: 100%;
@@ -405,12 +668,25 @@ a {
               position: absolute;
               right: 50%;
               transform: translateX(50%);
+
+              @media screen and (max-width: 1024px) {
+                margin-top: 0px;
+              }
             }
 
             &__image {
               display: flex;
               justify-content: center;
               align-items: center;
+
+              @media screen and (max-width: 1024px) {
+                width: 85%;
+                margin: 2% auto;
+              }
+
+              @media screen and (max-width: 640px) {
+                margin: 8% auto;
+              }
             }
           }
 
@@ -463,6 +739,10 @@ a {
         margin: 0 auto;
         position: relative;
 
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
+
         h2 {
           text-align: center;
           font-family: "Noto Serif JP";
@@ -493,8 +773,16 @@ a {
 
           &__title {
             display: flex;
-
             align-items: center;
+
+            >img {
+              padding-bottom: 3%;
+            }
+
+
+            @media screen and (max-width: 640px) {
+              flex-wrap: wrap;
+            }
 
             span {
               color: #fff;
@@ -528,10 +816,26 @@ a {
             justify-content: space-between;
             border-bottom: 4px double #fff;
 
-            &__image01 {}
+            &__image01 {
+
+              &__01 {
+                @media screen and (max-width: 768px) {
+                  width: 86%;
+                }
+              }
+
+
+            }
 
             &__image02 {
+              @media screen and (max-width: 768px) {
 
+                &__02 {
+                  @media screen and (max-width: 768px) {
+                    width: 86%;
+                  }
+                }
+              }
 
               &__02 {
                 margin-top: 10px;
@@ -540,8 +844,17 @@ a {
           }
 
           &__coupon {
+
             padding-top: 4%;
             text-align: center;
+
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
+
+            @media screen and (max-width: 640px) {
+              width: 100%;
+            }
           }
         }
 
@@ -555,6 +868,14 @@ a {
           &__title {
             display: flex;
             align-items: center;
+
+            >img {
+              padding-bottom: 3%;
+            }
+
+            @media screen and (max-width: 640px) {
+              flex-wrap: wrap;
+            }
 
             span {
               color: #fff;
@@ -594,6 +915,14 @@ a {
               position: relative;
               right: -50%;
               transform: translate(-50%);
+
+              &__01 {
+
+                @media screen and (max-width: 768px) {
+                  width: 75%;
+                }
+              }
+
             }
           }
 
@@ -626,8 +955,15 @@ a {
 
           &__title {
             display: flex;
-
             align-items: center;
+
+            >img {
+              padding-bottom: 3%;
+            }
+
+            @media screen and (max-width: 640px) {
+              flex-wrap: wrap;
+            }
 
             span {
               color: #fff;
@@ -674,6 +1010,12 @@ a {
           &__coupon {
             padding-top: 4%;
 
+            &__img01 {
+              @media screen and (max-width: 768px) {
+                width: 46%;
+              }
+            }
+
             &__img02 {
               margin-left: 13%;
               width: 34%;
@@ -698,12 +1040,28 @@ a {
       height: 760px;
       margin-bottom: 10%;
 
+      @media screen and (max-width: 1024px) {
+        height: 900px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        height: 1000px;
+      }
+
       &__container {
         max-width: 1100px;
         margin: 0 auto;
 
+        @media screen and (max-width: 1024px) {
+          padding: 2%;
+        }
+
         &__box {
           margin-top: 8%;
+
+          @media screen and (max-width: 640px) {
+            padding: 4%;
+          }
 
           &__title {
             background-color: #2D2D2D;
@@ -727,6 +1085,10 @@ a {
             line-height: 3;
             color: #2D2D2D;
             font-size: 18px;
+
+            @media screen and (max-width: 640px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -783,12 +1145,24 @@ a {
         position: relative;
         transform: translateY(100px);
 
+        @media screen and (max-width: 640px) {
+          flex-direction: column;
+        }
+
         &__item {
           width: 32%;
           background-color: #2d2d2d;
           display: flex;
           justify-content: center;
           align-items: center;
+
+          @media screen and (max-width: 640px) {
+            width: 100%;
+            margin-bottom: 3%;
+            display: flex;
+            display: none;
+      
+          }
 
           &:nth-of-type(3) {
 
@@ -812,7 +1186,15 @@ a {
               width: 46px;
               height: 44px;
               margin: 16px auto 27px;
+
+              @media screen and (max-width: 640px) {
+                display: inline-block;
+              }
             }
+          }
+
+          br {
+            display: none;
           }
 
           span {
@@ -828,6 +1210,10 @@ a {
               width: 36px;
               height: 46px;
               margin: 16px auto 14px;
+
+              @media screen and (max-width: 640px) {
+                display: inline-block;
+              }
             }
           }
         }
@@ -836,22 +1222,38 @@ a {
   }
 
   &__bg02 {
-    height: 770px;
+    //height: 770px;
     background-color: #F7F7F7;
+    margin-bottom: 10%;
+
+    @media screen and (max-width: 640px) {
+      margin-bottom: 0%;
+    }
 
     &__container {
       max-width: 1100px;
       margin: 0 auto;
-      
+
+      @media screen and (max-width: 640px) {
+        padding: 32% 4% 12% 4%;
+      }
+
       p {
         text-align: center;
         padding-top: 12%;
         font-family: "Noto Serif JP";
         font-size: 18px;
-        font-weight:  bold;
+        font-weight: bold;
+
         .bold {
           font-size: 28px;
           font-weight: 200;
+
+          @media screen and (max-width: 640px) {
+            display: block;
+            font-size: 20px;
+          }
+
         }
       }
 
@@ -859,13 +1261,18 @@ a {
         width: 100%;
         margin-top: 5%;
         display: flex;
-        font-size:24px;
+        font-size: 24px;
         font-weight: normal;
         font-family: "Noto Serif JP";
         border: 1px solid #2d2d2d;
         padding: 5%;
         background-color: #fff;
         padding-bottom: 7%;
+
+        @media screen and (max-width: 640px) {
+          flex-direction: column;
+        }
+
         &__item01 {
 
 
@@ -876,24 +1283,28 @@ a {
             font-weight: normal;
             border-bottom: 1px solid #2d2d2d;
           }
+
           ul {
             margin-top: 4%;
 
-            li {line-height: 2;
+            li {
+              line-height: 2;
               font-size: 16px;
-              
+
               span {
                 display: inline-block;
                 width: 100px;
               }
 
-              .title{
+              .title {
                 width: 10px;
               }
             }
           }
-          a{
-            color: #EF4154;;
+
+          a {
+            color: #EF4154;
+            ;
             margin-top: 5%;
             display: flex;
             align-items: center;
@@ -915,8 +1326,12 @@ a {
             }
           }
         }
+
         &__item02 {
-          
+          @media screen and (max-width: 640px) {
+            margin-left: 0;
+          }
+
           margin-left: 20%;
 
           h3 {
@@ -926,24 +1341,28 @@ a {
             font-weight: normal;
             border-bottom: 1px solid #2d2d2d;
           }
+
           ul {
             margin-top: 4%;
 
-            li {line-height: 2;
+            li {
+              line-height: 2;
               font-size: 16px;
-              
+
               span {
                 display: inline-block;
                 width: 100px;
               }
 
-              .title{
+              .title {
                 width: 10px;
               }
             }
           }
-          a{
-            color: #EF4154;;
+
+          a {
+            color: #EF4154;
+            ;
             margin-top: 5%;
             display: flex;
             align-items: center;
@@ -952,9 +1371,6 @@ a {
             display: flex;
             background-color: #2d2d2d;
             height: 25%;
-
-            
-
 
             &::before {
               content: "";
@@ -985,14 +1401,27 @@ a {
     margin: 0 auto;
     line-height: 2.5;
     color: #fff;
-    font-size:16px;
+    font-size: 16px;
     font-weight: normal;
     font-family: "Noto Serif JP";
+
+    @media screen and (max-width: 768px) {
+      padding: 2%;
+    }
 
     &__info02 {
       padding-bottom: 7%;
       width: 100%;
       display: flex;
+
+      @media screen and (max-width: 768px) {
+        padding: 8% 0;
+      }
+
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
+
 
       &__submenu01 {
         width: 45%;
@@ -1002,7 +1431,11 @@ a {
           background-color: #2d2d2d;
           position: relative;
           z-index: 5;
-          
+
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+
           &::after {
             z-index: -1;
             content: "";
@@ -1012,11 +1445,19 @@ a {
             bottom: 5%;
             height: 1px;
             background: #fff;
+
+            @media screen and (max-width: 768px) {
+              bottom: 3%;
+            }
           }
         }
-        
+
         .list {
           text-indent: 15px;
+
+          @media screen and (max-width: 768px) {
+            font-size: 13px;
+          }
         }
       }
 
@@ -1024,11 +1465,18 @@ a {
         width: 55%;
         padding-left: 3%;
 
+
+
         span {
           font-size: 18px;
           background-color: #2d2d2d;
           position: relative;
           z-index: 5;
+
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+
           &:nth-of-type(1) {
 
             &::after {
@@ -1070,6 +1518,7 @@ a {
             }
 
           }
+
           &:nth-of-type(4) {
             &::after {
               z-index: -1;
@@ -1082,16 +1531,19 @@ a {
               background: #fff;
             }
           }
-          
         }
 
         p {
           font-size: 16px;
           text-indent: 15px;
 
+          @media screen and (max-width: 768px) {
+            font-size: 13px;
+          }
         }
       }
     }
+
     &__info03 {
       color: #fff;
       padding-top: 7%;
@@ -1105,7 +1557,7 @@ a {
       letter-spacing: 0.075em;
       font-family: "Shippori Mincho", serif;
       font-weight: 500;
-  
+
     }
   }
 
