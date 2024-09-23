@@ -1626,6 +1626,96 @@ a {
     padding: 2%;
   }
 }
+.footer__container__info01__title {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__container__info01__title__f01 img {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .footer__container__info01__title__f01 {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    padding: 8% 0;
+  }
+}
+.footer__container__info01__title__f02 {
+  font-size: 20px;
+  line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .footer__container__info01__title__f02 {
+    font-size: 15px;
+  }
+}
+.footer__container__info01__title__f02 span {
+  font-size: 18px;
+  margin-right: 3%;
+}
+@media screen and (max-width: 640px) {
+  .footer__container__info01__title__f02 {
+    display: none;
+  }
+}
+.footer__container__info01__title__social {
+  display: flex;
+  align-items: center;
+}
+.footer__container__info01__title__social a {
+  margin-left: 25px;
+  border: 1px solid red;
+  display: flex;
+  color: #fff;
+  border: 1px solid rgba(209, 209, 209, 0.52);
+  border-radius: 50%;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
+.footer__container__info01__title__social a::before {
+  content: "";
+  background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/gnv_icon03.svg) no-repeat center center/100% auto;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 640px) {
+  .footer__container__info01__title__social {
+    display: none;
+  }
+}
+.footer__container__info01__info {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  line-height: 2;
+  padding: 3% 0;
+}
+@media screen and (max-width: 640px) {
+  .footer__container__info01__info {
+    display: none;
+  }
+}
+.footer__container__info01__info__f01 {
+  width: 45%;
+}
+.footer__container__info01__info__f02 {
+  width: 55%;
+}
 .footer__container__info02 {
   padding-bottom: 7%;
   width: 100%;
