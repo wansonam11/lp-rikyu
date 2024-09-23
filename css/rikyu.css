@@ -147,6 +147,23 @@ a {
     display: none;
   }
 }
+.main .main-visual__coupon__sp {
+  background-color: rgb(247, 247, 247);
+  padding: 3%;
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .main .main-visual__coupon__sp {
+    display: block;
+  }
+  .main .main-visual__coupon__sp__wrapper {
+    display: flex;
+  }
+  .main .main-visual__coupon__sp__wrapper img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 .main .main-content .guest {
   margin: 0 auto;
   max-width: 1100px;
@@ -372,6 +389,11 @@ a {
 @media screen and (max-width: 375px) {
   .main .main-content .example__container__list__box {
     height: 20vh;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main .main-content .example__container__list__box {
+    height: 17vh;
   }
 }
 .main .main-content .example__container__list__box:nth-of-type(3) .example__container__list__box__img {
@@ -758,21 +780,45 @@ a {
   left: 50%;
   transform: translate(-50%);
 }
-@media screen and (max-width: 425px) {
-  .main .main-content .cta-01__container__circle__button {
-    width: 80%;
-  }
-}
 .main .main-content .cta-01__container__circle__button span {
   font-family: "Noto Serif JP";
   color: #fff;
   font-size: 32px;
+}
+.main .main-content .cta-01__container__circle__button span::after {
+  content: "";
+  background: url(https://rikyu-home.com/wp-content/themes/rikyu_home/images/benefits/form__arrow.svg);
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 425px) {
+  .main .main-content .cta-01__container__circle__button span::after {
+    width: 23px;
+    top: 62%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main .main-content .cta-01__container__circle__button span {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 425px) {
   .main .main-content .cta-01__container__circle__button span {
     width: 100%;
     padding-top: 7%;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .main-content .cta-01__container__circle__button {
+    width: 80%;
   }
 }
 .main .main-content .introduction {

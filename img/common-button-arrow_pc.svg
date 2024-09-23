@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.901" height="15.832" viewBox="0 0 32.901 15.832">
+  <g id="flowKitConnector" transform="translate(2485.333 -1048.751)">
+    <path id="line" d="M-2485.333,1056.667h32" transform="translate(0)" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <path id="leftEdge" transform="translate(-2485.333 1056.667)" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <path id="rightEdge" d="M-11.25-7.5h0L0,0-11.25,7.5" transform="translate(-2453.333 1056.667)" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  </g>
+</svg>
